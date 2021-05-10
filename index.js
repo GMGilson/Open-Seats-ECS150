@@ -11,7 +11,7 @@ app.get("/", (_, res) => {
 app.get("/shame", shame)
 
 function shame(request, res){
-    /* const exec = require("child_process").exec;
+    const exec = require("child_process").exec;
     exec(noah,
         {shell: "/bin/zsh"},
         (err, stdout, stderr) => {
@@ -26,13 +26,13 @@ function shame(request, res){
         seats = seats.split(" ").pop()
         res.send(JSON.stringify({openseats : seats}));
         return;
-    }) */
+    })
 }
 
 
                     
 
-const listener = app.listen(5002, () => {
+const listener = app.listen(5000, () => {
     console.log(`Listening on port ${listener.address().port}`);
 })
 
