@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fuck the ECS department</title>
     <link rel="stylesheet" href="/styles/css/styles.css">
+    <script defer src="./update.js"></script>
 </head>
 
 <main>
@@ -26,19 +27,6 @@
     <img src="UCD_logo.png" width="300px">
 </main>
 
-<script>
-let counter = document.getElementById("open-seats");
-setInterval(
-    () => {
-        fetch("/shame",{method: "GET",})
-        .then((response) => {
-            response.json()
-            .then((body) => {
-                counter.innerHTML = `${body.openseats}`
-            })
-            console.log(response)
-    });
-}, 10000);
-</script>
+
 
 </html>
