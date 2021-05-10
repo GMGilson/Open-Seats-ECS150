@@ -2,7 +2,10 @@
 let counter = document.getElementById("open-seats");
 setInterval(
     () => {
-        fetch("/shame",{method: "GET"})
+        fetch("/shame",{
+            "method": "GET",
+            "Content-Type": "application/json"
+        })
         .then((response) => {
             console.log(response)
             return response.json();
