@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuck the ECS department</title>
+</head>
+
+<main>
+
+    <h1>My Grievence</h1>
+    <div>
+        ECS 150: Operating Systems is a UC Davis Computer Science major and graduation
+        requirement for Computer Science majors. Every quarter this course consistently 
+        is filled to its max capacity. This website frequently checks the number of availiable seats
+        for ECS 150 so you can cry your impending university mandated fith year without logging into schedule builder!
+    </div>
+
+    <div id="open-seats-container">
+        <h2>There are currently </h2>
+        <div id="open-seats"></div>
+        <script>
+            let counter = document.getElementById("open-seats");
+            setInterval(
+                () => {
+                    fetch("/shame",{method: "GET",})
+                    .then((response) => {
+                        response.json()
+                        .then((body) => {
+                            counter.innerHTML = `${body.openseats}`
+                        })
+                        console.log(response)
+                });
+            }, 5000);
+                    
+        </script>
+
+        <h2>seats left in ECS 150</h2>
+    </div>
+
+</main>
+
+</html>
