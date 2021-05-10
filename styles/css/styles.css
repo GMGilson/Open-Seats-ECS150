@@ -29,7 +29,6 @@ p {
 
 img {
   margin-top: 15vh;
-  background-color: #DDDDDD;
   padding: 5px;
 }
 
@@ -40,6 +39,7 @@ img {
 }
 
 #open-seats-container, #open-seats-container:hover {
+  /* src: https://codemyui.com/rainbow-text-animation/ */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,67 +65,67 @@ img {
 }
 @keyframes anim-text-flow-keys {
   0% {
-    color: #70d65c;
+    color: #5cd66c;
   }
   5% {
-    color: #d6665c;
+    color: #b4d65c;
   }
   10% {
-    color: #bad65c;
+    color: #5ccad6;
   }
   15% {
-    color: #d6815c;
+    color: #d6be5c;
   }
   20% {
-    color: #d6955c;
+    color: #95d65c;
   }
   25% {
-    color: #d65c99;
+    color: #d6b15c;
   }
   30% {
-    color: #7ed65c;
+    color: #d6be5c;
   }
   35% {
-    color: #785cd6;
+    color: #5c78d6;
   }
   40% {
-    color: #5c64d6;
+    color: #d6cc5c;
   }
   45% {
-    color: #5cd67c;
+    color: #93d65c;
   }
   50% {
-    color: #5c66d6;
+    color: #9b5cd6;
   }
   55% {
-    color: #b65cd6;
+    color: #5cabd6;
   }
   60% {
-    color: #d65c78;
+    color: #d65c5c;
   }
   65% {
-    color: #d65c81;
+    color: #62d65c;
   }
   70% {
-    color: #d65c5e;
+    color: #d6765c;
   }
   75% {
-    color: #d65c9d;
+    color: #d67c5c;
   }
   80% {
-    color: #5cd68d;
+    color: #5cd662;
   }
   85% {
-    color: #9dd65c;
+    color: #d65c66;
   }
   90% {
-    color: #5cd676;
+    color: #60d65c;
   }
   95% {
-    color: #d6d65c;
+    color: #5cabd6;
   }
   100% {
-    color: #d65cb1;
+    color: #5c6ad6;
   }
 }
 #open-seats-container h2:nth-of-type(1), #open-seats-container:hover h2:nth-of-type(1) {
