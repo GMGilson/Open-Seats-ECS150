@@ -1,0 +1,432 @@
+html {
+  background-color: #111111;
+  color: #eeeeee;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  margin: 0 20%;
+  text-align: justify;
+  font-size: 1.25em;
+  max-width: 800px;
+}
+
+img {
+  margin-top: 15vh;
+  background-color: #DDDDDD;
+  padding: 5px;
+}
+
+#open-seats {
+  font-size: 50pt;
+  font-family: monospace;
+  margin: 0;
+}
+
+#open-seats-container, #open-seats-container:hover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*
+   * Animation variables
+   */
+  /*
+   * Elements settings
+   */
+  /*
+   * Keyframe loop
+   */
+  /*
+   * Element animation delay loop
+   */
+}
+#open-seats-container h2, #open-seats-container:hover h2 {
+  animation-name: anim-text-flow-keys;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes anim-text-flow-keys {
+  0% {
+    color: #70d65c;
+  }
+  5% {
+    color: #d6665c;
+  }
+  10% {
+    color: #bad65c;
+  }
+  15% {
+    color: #d6815c;
+  }
+  20% {
+    color: #d6955c;
+  }
+  25% {
+    color: #d65c99;
+  }
+  30% {
+    color: #7ed65c;
+  }
+  35% {
+    color: #785cd6;
+  }
+  40% {
+    color: #5c64d6;
+  }
+  45% {
+    color: #5cd67c;
+  }
+  50% {
+    color: #5c66d6;
+  }
+  55% {
+    color: #b65cd6;
+  }
+  60% {
+    color: #d65c78;
+  }
+  65% {
+    color: #d65c81;
+  }
+  70% {
+    color: #d65c5e;
+  }
+  75% {
+    color: #d65c9d;
+  }
+  80% {
+    color: #5cd68d;
+  }
+  85% {
+    color: #9dd65c;
+  }
+  90% {
+    color: #5cd676;
+  }
+  95% {
+    color: #d6d65c;
+  }
+  100% {
+    color: #d65cb1;
+  }
+}
+#open-seats-container h2:nth-of-type(1), #open-seats-container:hover h2:nth-of-type(1) {
+  animation-delay: -19.8s;
+}
+#open-seats-container h2:nth-of-type(2), #open-seats-container:hover h2:nth-of-type(2) {
+  animation-delay: -19.6s;
+}
+#open-seats-container h2:nth-of-type(3), #open-seats-container:hover h2:nth-of-type(3) {
+  animation-delay: -19.4s;
+}
+#open-seats-container h2:nth-of-type(4), #open-seats-container:hover h2:nth-of-type(4) {
+  animation-delay: -19.2s;
+}
+#open-seats-container h2:nth-of-type(5), #open-seats-container:hover h2:nth-of-type(5) {
+  animation-delay: -19s;
+}
+#open-seats-container h2:nth-of-type(6), #open-seats-container:hover h2:nth-of-type(6) {
+  animation-delay: -18.8s;
+}
+#open-seats-container h2:nth-of-type(7), #open-seats-container:hover h2:nth-of-type(7) {
+  animation-delay: -18.6s;
+}
+#open-seats-container h2:nth-of-type(8), #open-seats-container:hover h2:nth-of-type(8) {
+  animation-delay: -18.4s;
+}
+#open-seats-container h2:nth-of-type(9), #open-seats-container:hover h2:nth-of-type(9) {
+  animation-delay: -18.2s;
+}
+#open-seats-container h2:nth-of-type(10), #open-seats-container:hover h2:nth-of-type(10) {
+  animation-delay: -18s;
+}
+#open-seats-container h2:nth-of-type(11), #open-seats-container:hover h2:nth-of-type(11) {
+  animation-delay: -17.8s;
+}
+#open-seats-container h2:nth-of-type(12), #open-seats-container:hover h2:nth-of-type(12) {
+  animation-delay: -17.6s;
+}
+#open-seats-container h2:nth-of-type(13), #open-seats-container:hover h2:nth-of-type(13) {
+  animation-delay: -17.4s;
+}
+#open-seats-container h2:nth-of-type(14), #open-seats-container:hover h2:nth-of-type(14) {
+  animation-delay: -17.2s;
+}
+#open-seats-container h2:nth-of-type(15), #open-seats-container:hover h2:nth-of-type(15) {
+  animation-delay: -17s;
+}
+#open-seats-container h2:nth-of-type(16), #open-seats-container:hover h2:nth-of-type(16) {
+  animation-delay: -16.8s;
+}
+#open-seats-container h2:nth-of-type(17), #open-seats-container:hover h2:nth-of-type(17) {
+  animation-delay: -16.6s;
+}
+#open-seats-container h2:nth-of-type(18), #open-seats-container:hover h2:nth-of-type(18) {
+  animation-delay: -16.4s;
+}
+#open-seats-container h2:nth-of-type(19), #open-seats-container:hover h2:nth-of-type(19) {
+  animation-delay: -16.2s;
+}
+#open-seats-container h2:nth-of-type(20), #open-seats-container:hover h2:nth-of-type(20) {
+  animation-delay: -16s;
+}
+#open-seats-container h2:nth-of-type(21), #open-seats-container:hover h2:nth-of-type(21) {
+  animation-delay: -15.8s;
+}
+#open-seats-container h2:nth-of-type(22), #open-seats-container:hover h2:nth-of-type(22) {
+  animation-delay: -15.6s;
+}
+#open-seats-container h2:nth-of-type(23), #open-seats-container:hover h2:nth-of-type(23) {
+  animation-delay: -15.4s;
+}
+#open-seats-container h2:nth-of-type(24), #open-seats-container:hover h2:nth-of-type(24) {
+  animation-delay: -15.2s;
+}
+#open-seats-container h2:nth-of-type(25), #open-seats-container:hover h2:nth-of-type(25) {
+  animation-delay: -15s;
+}
+#open-seats-container h2:nth-of-type(26), #open-seats-container:hover h2:nth-of-type(26) {
+  animation-delay: -14.8s;
+}
+#open-seats-container h2:nth-of-type(27), #open-seats-container:hover h2:nth-of-type(27) {
+  animation-delay: -14.6s;
+}
+#open-seats-container h2:nth-of-type(28), #open-seats-container:hover h2:nth-of-type(28) {
+  animation-delay: -14.4s;
+}
+#open-seats-container h2:nth-of-type(29), #open-seats-container:hover h2:nth-of-type(29) {
+  animation-delay: -14.2s;
+}
+#open-seats-container h2:nth-of-type(30), #open-seats-container:hover h2:nth-of-type(30) {
+  animation-delay: -14s;
+}
+#open-seats-container h2:nth-of-type(31), #open-seats-container:hover h2:nth-of-type(31) {
+  animation-delay: -13.8s;
+}
+#open-seats-container h2:nth-of-type(32), #open-seats-container:hover h2:nth-of-type(32) {
+  animation-delay: -13.6s;
+}
+#open-seats-container h2:nth-of-type(33), #open-seats-container:hover h2:nth-of-type(33) {
+  animation-delay: -13.4s;
+}
+#open-seats-container h2:nth-of-type(34), #open-seats-container:hover h2:nth-of-type(34) {
+  animation-delay: -13.2s;
+}
+#open-seats-container h2:nth-of-type(35), #open-seats-container:hover h2:nth-of-type(35) {
+  animation-delay: -13s;
+}
+#open-seats-container h2:nth-of-type(36), #open-seats-container:hover h2:nth-of-type(36) {
+  animation-delay: -12.8s;
+}
+#open-seats-container h2:nth-of-type(37), #open-seats-container:hover h2:nth-of-type(37) {
+  animation-delay: -12.6s;
+}
+#open-seats-container h2:nth-of-type(38), #open-seats-container:hover h2:nth-of-type(38) {
+  animation-delay: -12.4s;
+}
+#open-seats-container h2:nth-of-type(39), #open-seats-container:hover h2:nth-of-type(39) {
+  animation-delay: -12.2s;
+}
+#open-seats-container h2:nth-of-type(40), #open-seats-container:hover h2:nth-of-type(40) {
+  animation-delay: -12s;
+}
+#open-seats-container h2:nth-of-type(41), #open-seats-container:hover h2:nth-of-type(41) {
+  animation-delay: -11.8s;
+}
+#open-seats-container h2:nth-of-type(42), #open-seats-container:hover h2:nth-of-type(42) {
+  animation-delay: -11.6s;
+}
+#open-seats-container h2:nth-of-type(43), #open-seats-container:hover h2:nth-of-type(43) {
+  animation-delay: -11.4s;
+}
+#open-seats-container h2:nth-of-type(44), #open-seats-container:hover h2:nth-of-type(44) {
+  animation-delay: -11.2s;
+}
+#open-seats-container h2:nth-of-type(45), #open-seats-container:hover h2:nth-of-type(45) {
+  animation-delay: -11s;
+}
+#open-seats-container h2:nth-of-type(46), #open-seats-container:hover h2:nth-of-type(46) {
+  animation-delay: -10.8s;
+}
+#open-seats-container h2:nth-of-type(47), #open-seats-container:hover h2:nth-of-type(47) {
+  animation-delay: -10.6s;
+}
+#open-seats-container h2:nth-of-type(48), #open-seats-container:hover h2:nth-of-type(48) {
+  animation-delay: -10.4s;
+}
+#open-seats-container h2:nth-of-type(49), #open-seats-container:hover h2:nth-of-type(49) {
+  animation-delay: -10.2s;
+}
+#open-seats-container h2:nth-of-type(50), #open-seats-container:hover h2:nth-of-type(50) {
+  animation-delay: -10s;
+}
+#open-seats-container h2:nth-of-type(51), #open-seats-container:hover h2:nth-of-type(51) {
+  animation-delay: -9.8s;
+}
+#open-seats-container h2:nth-of-type(52), #open-seats-container:hover h2:nth-of-type(52) {
+  animation-delay: -9.6s;
+}
+#open-seats-container h2:nth-of-type(53), #open-seats-container:hover h2:nth-of-type(53) {
+  animation-delay: -9.4s;
+}
+#open-seats-container h2:nth-of-type(54), #open-seats-container:hover h2:nth-of-type(54) {
+  animation-delay: -9.2s;
+}
+#open-seats-container h2:nth-of-type(55), #open-seats-container:hover h2:nth-of-type(55) {
+  animation-delay: -9s;
+}
+#open-seats-container h2:nth-of-type(56), #open-seats-container:hover h2:nth-of-type(56) {
+  animation-delay: -8.8s;
+}
+#open-seats-container h2:nth-of-type(57), #open-seats-container:hover h2:nth-of-type(57) {
+  animation-delay: -8.6s;
+}
+#open-seats-container h2:nth-of-type(58), #open-seats-container:hover h2:nth-of-type(58) {
+  animation-delay: -8.4s;
+}
+#open-seats-container h2:nth-of-type(59), #open-seats-container:hover h2:nth-of-type(59) {
+  animation-delay: -8.2s;
+}
+#open-seats-container h2:nth-of-type(60), #open-seats-container:hover h2:nth-of-type(60) {
+  animation-delay: -8s;
+}
+#open-seats-container h2:nth-of-type(61), #open-seats-container:hover h2:nth-of-type(61) {
+  animation-delay: -7.8s;
+}
+#open-seats-container h2:nth-of-type(62), #open-seats-container:hover h2:nth-of-type(62) {
+  animation-delay: -7.6s;
+}
+#open-seats-container h2:nth-of-type(63), #open-seats-container:hover h2:nth-of-type(63) {
+  animation-delay: -7.4s;
+}
+#open-seats-container h2:nth-of-type(64), #open-seats-container:hover h2:nth-of-type(64) {
+  animation-delay: -7.2s;
+}
+#open-seats-container h2:nth-of-type(65), #open-seats-container:hover h2:nth-of-type(65) {
+  animation-delay: -7s;
+}
+#open-seats-container h2:nth-of-type(66), #open-seats-container:hover h2:nth-of-type(66) {
+  animation-delay: -6.8s;
+}
+#open-seats-container h2:nth-of-type(67), #open-seats-container:hover h2:nth-of-type(67) {
+  animation-delay: -6.6s;
+}
+#open-seats-container h2:nth-of-type(68), #open-seats-container:hover h2:nth-of-type(68) {
+  animation-delay: -6.4s;
+}
+#open-seats-container h2:nth-of-type(69), #open-seats-container:hover h2:nth-of-type(69) {
+  animation-delay: -6.2s;
+}
+#open-seats-container h2:nth-of-type(70), #open-seats-container:hover h2:nth-of-type(70) {
+  animation-delay: -6s;
+}
+#open-seats-container h2:nth-of-type(71), #open-seats-container:hover h2:nth-of-type(71) {
+  animation-delay: -5.8s;
+}
+#open-seats-container h2:nth-of-type(72), #open-seats-container:hover h2:nth-of-type(72) {
+  animation-delay: -5.6s;
+}
+#open-seats-container h2:nth-of-type(73), #open-seats-container:hover h2:nth-of-type(73) {
+  animation-delay: -5.4s;
+}
+#open-seats-container h2:nth-of-type(74), #open-seats-container:hover h2:nth-of-type(74) {
+  animation-delay: -5.2s;
+}
+#open-seats-container h2:nth-of-type(75), #open-seats-container:hover h2:nth-of-type(75) {
+  animation-delay: -5s;
+}
+#open-seats-container h2:nth-of-type(76), #open-seats-container:hover h2:nth-of-type(76) {
+  animation-delay: -4.8s;
+}
+#open-seats-container h2:nth-of-type(77), #open-seats-container:hover h2:nth-of-type(77) {
+  animation-delay: -4.6s;
+}
+#open-seats-container h2:nth-of-type(78), #open-seats-container:hover h2:nth-of-type(78) {
+  animation-delay: -4.4s;
+}
+#open-seats-container h2:nth-of-type(79), #open-seats-container:hover h2:nth-of-type(79) {
+  animation-delay: -4.2s;
+}
+#open-seats-container h2:nth-of-type(80), #open-seats-container:hover h2:nth-of-type(80) {
+  animation-delay: -4s;
+}
+#open-seats-container h2:nth-of-type(81), #open-seats-container:hover h2:nth-of-type(81) {
+  animation-delay: -3.8s;
+}
+#open-seats-container h2:nth-of-type(82), #open-seats-container:hover h2:nth-of-type(82) {
+  animation-delay: -3.6s;
+}
+#open-seats-container h2:nth-of-type(83), #open-seats-container:hover h2:nth-of-type(83) {
+  animation-delay: -3.4s;
+}
+#open-seats-container h2:nth-of-type(84), #open-seats-container:hover h2:nth-of-type(84) {
+  animation-delay: -3.2s;
+}
+#open-seats-container h2:nth-of-type(85), #open-seats-container:hover h2:nth-of-type(85) {
+  animation-delay: -3s;
+}
+#open-seats-container h2:nth-of-type(86), #open-seats-container:hover h2:nth-of-type(86) {
+  animation-delay: -2.8s;
+}
+#open-seats-container h2:nth-of-type(87), #open-seats-container:hover h2:nth-of-type(87) {
+  animation-delay: -2.6s;
+}
+#open-seats-container h2:nth-of-type(88), #open-seats-container:hover h2:nth-of-type(88) {
+  animation-delay: -2.4s;
+}
+#open-seats-container h2:nth-of-type(89), #open-seats-container:hover h2:nth-of-type(89) {
+  animation-delay: -2.2s;
+}
+#open-seats-container h2:nth-of-type(90), #open-seats-container:hover h2:nth-of-type(90) {
+  animation-delay: -2s;
+}
+#open-seats-container h2:nth-of-type(91), #open-seats-container:hover h2:nth-of-type(91) {
+  animation-delay: -1.8s;
+}
+#open-seats-container h2:nth-of-type(92), #open-seats-container:hover h2:nth-of-type(92) {
+  animation-delay: -1.6s;
+}
+#open-seats-container h2:nth-of-type(93), #open-seats-container:hover h2:nth-of-type(93) {
+  animation-delay: -1.4s;
+}
+#open-seats-container h2:nth-of-type(94), #open-seats-container:hover h2:nth-of-type(94) {
+  animation-delay: -1.2s;
+}
+#open-seats-container h2:nth-of-type(95), #open-seats-container:hover h2:nth-of-type(95) {
+  animation-delay: -1s;
+}
+#open-seats-container h2:nth-of-type(96), #open-seats-container:hover h2:nth-of-type(96) {
+  animation-delay: -0.8s;
+}
+#open-seats-container h2:nth-of-type(97), #open-seats-container:hover h2:nth-of-type(97) {
+  animation-delay: -0.6s;
+}
+#open-seats-container h2:nth-of-type(98), #open-seats-container:hover h2:nth-of-type(98) {
+  animation-delay: -0.4s;
+}
+#open-seats-container h2:nth-of-type(99), #open-seats-container:hover h2:nth-of-type(99) {
+  animation-delay: -0.2s;
+}
+#open-seats-container h2:nth-of-type(100), #open-seats-container:hover h2:nth-of-type(100) {
+  animation-delay: 0s;
+}
+
+/*# sourceMappingURL=styles.css.map */

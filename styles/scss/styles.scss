@@ -1,0 +1,90 @@
+html {
+    background-color: #111111;
+    color: #eeeeee;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    margin: 0 20%;
+    text-align: justify;
+    font-size: 1.25em;
+    max-width: 800px;
+}
+
+img {
+    margin-top: 15vh;
+    background-color: #DDDDDD;
+    padding: 5px;
+}
+
+#open-seats {
+    font-size: 50pt;
+    font-family: monospace;
+    margin: 0;
+}
+
+#open-seats-container, #open-seats-container:hover {
+    // src: https://codemyui.com/rainbow-text-animation/
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  /*
+   * Animation variables
+   */
+  $animationSteps: 20;
+  $animationDuration: 12;
+  $animationElement: h2;
+  $animationElementsCount: 100;
+  $delayBetweenLetters: 0.2;
+
+  /*
+   * Elements settings
+   */
+  #{$animationElement} {
+    animation-name: anim-text-flow-keys;
+    animation-duration: #{$animationDuration}s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+
+  /*
+   * Keyframe loop
+   */
+  @keyframes anim-text-flow-keys {
+    @for $i from 0 through $animationSteps {
+      #{percentage($i * (1 / $animationSteps))} {
+        color: hsla(random(365), 60, 60, 1);
+      }
+    }
+  }
+
+  /*
+   * Element animation delay loop
+   */
+  $totalDelayTime: $animationElementsCount * $delayBetweenLetters;
+
+  @for $i from 1 through $animationElementsCount {
+    #{$animationElement}:nth-of-type(#{$i}) {
+      animation-delay: #{($i * $delayBetweenLetters) - $totalDelayTime}s;
+    }
+  }
+}
