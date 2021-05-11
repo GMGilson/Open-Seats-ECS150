@@ -6,9 +6,9 @@ setInterval(
             "method": "GET",
             "Content-Type": "application/json"
         })
-        .then((response) => {
+        .then(async (response) => {
             console.log(response)
-            return response.json();
+            return await response.json();
         })
         .then((body) => {
             counter.innerHTML = `${body.openseats}`
