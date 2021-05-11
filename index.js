@@ -14,23 +14,26 @@ app.get("/", (_, res) => {
 app.get("/shame", shame)
 
 function shame(request, res){
+    res.send(JSON.stringify({openseats: seatsLeft}));
+}
+
+var seatsLeft = -1;
+
+setInterval( () => {
     exec("/home/ggilson/Open-Seats-ECS150/noah.sh",
         {shell: "/bin/zsh"},
         (err, stdout, stderr) => {
-        console.log(`stdout: ${stdout}`)
-        console.log(`stderr: ${stderr}`)
-        if (err !== null){
+        console.log(`stdout: ${stdout}`);
+        console.log(`stderr: ${stderr}`);
+        if (err !== null) {
             console.log(`exec error : ${err}`);
-            res.send("Im a little teapot 418")
-            return
+            return;
         }
         // let seats = stdout.replace(/\s+/g,' ').trim();
         // seats = seats.split(" ").pop()
-        let seats = stdout
-        res.send(JSON.stringify({openseats : seats}));
-        return;
-    })
-}
+        seatsLeft = stdout;
+    });
+}, 5000);
 
 const listener = app.listen(8080, () => {
     console.log(`Listening on port ${listener.address().port}`);
