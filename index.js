@@ -1,5 +1,5 @@
 console.log(process.version)
-const { execFile, spawn } = require("child_process");
+const { execFile, spawn, exec } = require("child_process");
 const express = require("express");
 const app = express()
 
@@ -14,12 +14,11 @@ app.get("/", (_, res) => {
 app.get("/shame", shame)
 
 function shame(request, res){
-    spawn("/bin/zsh", ["./noah.sh"],
-        {cwd: ".", shell: "/bin/zsh"},
+    exec("/home/ggilson/Open-Seats-ECS150/noah.sh",
+        {shell: "/bin/zsh"},
         (err, stdout, stderr) => {
         console.log(`stdout: ${stdout}`)
         console.log(`stderr: ${stderr}`)
-        console.log(`cwd : ${cwd}`)
         if (err !== null){
             console.log(`exec error : ${err}`);
             res.send("Im a little teapot 418")
