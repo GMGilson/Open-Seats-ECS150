@@ -14,8 +14,8 @@ app.get("/", (_, res) => {
 app.get("/shame", shame)
 
 function shame(request, res){
-    execFile("noah.sh", [],
-        {shell: "/bin/zsh"},
+    execFile("./noah.sh", [],
+        {cwd: ".", shell: "/bin/zsh"},
         (err, stdout, stderr) => {
         console.log(`stdout: ${stdout}`)
         console.log(`stderr: ${stderr}`)
