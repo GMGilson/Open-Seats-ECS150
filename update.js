@@ -13,4 +13,7 @@ setInterval(
         .then((body) => {
             counter.innerHTML = `${body.openseats}`
         })
+        .catch(err => {
+            console.log(err);
+        })
 }, 5000);
