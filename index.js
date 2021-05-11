@@ -1,4 +1,5 @@
 console.log(process.version)
+const { execFile } = require("child_process");
 const express = require("express");
 const app = express()
 
@@ -13,8 +14,7 @@ app.get("/", (_, res) => {
 app.get("/shame", shame)
 
 function shame(request, res){
-    const exec = require("child_process").exec;
-    exec(query, [],
+    execFile("noah.sh", [],
         {shell: "/bin/zsh"},
         (err, stdout, stderr) => {
         console.log(`stdout: ${stdout}`)
